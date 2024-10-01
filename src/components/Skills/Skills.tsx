@@ -25,7 +25,7 @@ const Skills = () => {
 			/>
 
 			<span className={classes['search__status']}>
-				{!hasQuery && 'Type something to search'}
+				{!hasQuery && !items && 'Type something to search'}
 				{hasQuery && loading && 'Searching...'}
 				{error && `Error occurred: ${error}`}
 			</span>
